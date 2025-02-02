@@ -12,11 +12,12 @@ export class InoutComponent {
   courses = COURSES;
   coreCourse = COURSES[0];
   rxjsCourse = COURSES[1];
-  ngCourse = COURSES[2];
+
+  emittedValue: Course | undefined;
 
 
   onCourseSelected(course: Course) {
-    alert("Parent --" + JSON.stringify(course));
+    this.emittedValue = course;
   }
 
 }

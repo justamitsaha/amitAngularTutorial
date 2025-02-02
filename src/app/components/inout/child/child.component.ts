@@ -17,7 +17,7 @@ export class ChildComponent {
   courseSelected = new EventEmitter<Course>();
 
   onCourseViewed() {
-    alert("child " + JSON.stringify(this.course));
+    alert("Course Value emitted from child " + JSON.stringify(this.course));
     this.courseSelected.emit(this.course);
 
   }
