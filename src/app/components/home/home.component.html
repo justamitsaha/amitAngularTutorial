@@ -1,0 +1,14 @@
+<h1>Welcome to {{data.title}}</h1>
+
+<img src="{{url}}" alt="Logo" (click)="onLogoClicked()"><br><br>
+
+<input (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
+
+<textarea name="w3review" rows="20" cols="100">
+    We have below data present in component and it is reflecting in the header and 
+    data = {
+      title: ' Angular tutorial'
+    }
+    Enter the below HTML/script in input and angular security features will prevent the scrit from executing
+    <h1>ji</h1><script>alert("alert")</script>
+</textarea>
