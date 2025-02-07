@@ -1,6 +1,7 @@
 <p>inout works!</p>
-<app-child (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></app-child>
-<app-child (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></app-child>
+<app-child (courseSelected)="onCourseSelected($event)" [course]="angular"></app-child>
+<app-child (courseSelected)="onCourseSelected($event)" [course]="rxjs"></app-child>
+<app-child (courseSelected)="onCourseSelected($event)" [course]="ngrx"></app-child>
 
 <textarea name="w3review" rows="20" cols="100" *ngIf="emittedValue">
     Click any Buttons to see the value of the course(child component) being bubbled up to the parent

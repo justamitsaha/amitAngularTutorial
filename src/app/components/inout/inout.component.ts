@@ -9,9 +9,9 @@ import { Course } from '../../model/course';
 })
 export class InoutComponent {
 
-  courses = COURSES;
-  coreCourse = COURSES[0];
-  rxjsCourse = COURSES[1];
+  angular = COURSES;
+  rxjs = COURSES[0];
+  ngrx = COURSES[1];
 
   emittedValue: Course | undefined;
 
